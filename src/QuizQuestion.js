@@ -6,15 +6,29 @@ class QuizQuestion extends Component {
     constructor(props){
         super(props);
         this.state={
-         
+         isError: false
         }
       }
 
        handleClick(buttonText){
         if ( buttonText === this.props.quiz_question.answer) {
           this.props.showNextQuestionHandler() ;
-        }
+          
 
+          this.setState(state => ({
+            isError : false
+          }));
+
+        }
+      else 
+      {
+
+        this.setState(state => ({
+            isError : true
+          }));
+
+
+    }
       }
 
     render() {
@@ -29,7 +43,6 @@ class QuizQuestion extends Component {
        
         <section className="buttons">
           <ul>
-
           {
             this.props.quiz_question.answer_options.map((item,index) => (
             <QuizQuestionButton clickHandler = {this.handleClick.bind(this)} key= {index} button_text = {item}></QuizQuestionButton>
@@ -37,6 +50,11 @@ class QuizQuestion extends Component {
          }
          </ul>
         </section>
+       
+       <div>
+
+       { this.state.isError ? <div> Sorry, that's not right </div> :  <div>  </div>}
+       </div>
       
       </main>
         

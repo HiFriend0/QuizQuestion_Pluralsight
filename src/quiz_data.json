@@ -8,9 +8,9 @@
     },
     {
       "id": 2,
-      "instruction_text": "What's your favorite number?",
-      "answer_options": ["1", "2", "3", "4"],
-      "answer": "4"
+      "instruction_text": "creator of google ?",
+      "answer_options": ["Larry page & Sergey Brin", "Jeff Bezos", "satya nadella", "bill gates"],
+      "answer": "Larry page & Sergey Brin"
     },
     {
       "id": 3,
