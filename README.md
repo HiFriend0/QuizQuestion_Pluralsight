@@ -1,3 +1,9 @@
+You can see how the project looks like here :
+
+https://hifriend0.github.io/QuizQuestion_Pluralsight/
+
+---
+
 This is a written tutorial on How to deploy your React app into Github Pages
 
 >> https://blog.usejournal.com/how-to-deploy-your-react-app-into-github-pages-b2c96292b18e
