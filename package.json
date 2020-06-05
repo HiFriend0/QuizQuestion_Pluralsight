@@ -1,4 +1,5 @@
 {
+  "homepage": "http://HiFriend0.github.io/QuizQuestion_Pluralsight",
   "name": "build-a-quiz-component-with-react",
   "version": "0.1.1",
   "private": true,
@@ -10,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
     "test:module1": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module1 || true",
@@ -48,8 +49,8 @@
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "esprima": "4.0.0",
+    "gh-pages": "^3.0.0",
     "react-test-renderer": "16.3.1",
     "sinon": "5.0.1"
-  },
-  "homepage": "http://HiFriend0.github.io/QuizQuestion_Pluralsight"
- }
+  }
+}

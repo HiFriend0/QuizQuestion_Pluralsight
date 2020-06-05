@@ -1,3 +1,9 @@
+This is a written tutorial on How to deploy your React app into Github Pages
+
+>> https://blog.usejournal.com/how-to-deploy-your-react-app-into-github-pages-b2c96292b18e
+
+--------
+
 # Build a Quiz Component with React
 
 This repo contains the code for the Pluralsight Project "Build a Quiz Component with React," located here: https://app.pluralsight.com/projects/build-a-quiz-component-with-react/
