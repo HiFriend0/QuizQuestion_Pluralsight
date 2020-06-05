@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import QuizQuestion from './QuizQuestion'
 import QuizEnd from './QuizEnd'
-
+ 
 let quizData = require('./quiz_data.json')
 
 class Quiz extends Component {
@@ -46,13 +46,18 @@ class Quiz extends Component {
       }*/
 
       return (
-      <div>
-      {
-        isQuizEnd ?  <QuizEnd resetClickHandler={this.handleResetClick.bind(this)} /> : <QuizQuestion showNextQuestionHandler={this.showNextQuestion.bind(this)} quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} />
+ <div>
+       
 
-      }
-       </div>
-        )
+          <div>
+          {
+            isQuizEnd ?  <QuizEnd resetClickHandler={this.handleResetClick.bind(this)} /> : <QuizQuestion showNextQuestionHandler={this.showNextQuestion.bind(this)} quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} />
+
+          }
+          </div>
+</div>
+         
+         )
     }
 
   }
